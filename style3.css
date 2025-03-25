@@ -8,6 +8,9 @@
 }
 
 body {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
     background: linear-gradient(45deg, #22D4FD, #4B0082, #8A2BE2, #1E90FF, #FF6347);
     background-size: 400% 400%;
     animation: gradientBackground 15s ease infinite;
@@ -15,8 +18,8 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;  
-    align-items: center;     
-    height: 100vh;            
+    align-items: center;  
+    text-align: center;              
     margin: 0;
 }
 
@@ -82,7 +85,7 @@ body {
 
 .imagempit {
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin: 20px;
     width: 150px;
     height: 150px;
     transition: transform 0.3s ease;
@@ -106,8 +109,8 @@ body {
 
 h2 {
     margin-left: px
-    text-align: center;
-    margin-top: 12px;
+    text-align : center;
+    margin-top : 12px;
     padding: 10px;
     color: whitesmoke;
 }
@@ -210,6 +213,9 @@ h2 {
     color: #F6F6F6;
 }
 .h3sobremim {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
     margin-right: 600px;
     margin-left: 600px;
     font-family: "Kanit", sans-serif;
