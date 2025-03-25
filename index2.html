@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="stylesheet" href="style2.css">
 </head>
-
 <body>
-    <div class="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </div>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index2.html">Login</a></li>
+                <li><a href="index.html">Criador</a></li>
+                <li><a href="index3.html">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="login-container">
-        <div class="login-form">
-            <h2 class="tituloapresentacao">Entre na sua Conta</h2>
-            <form action="#" method="POST">
+    <main class="login-container">
+        <section class="login-form">
+            <h1 class="tituloapresentacao">Bem-vindo (a)</h1>
+            <form action="#">
                 <div class="input-group">
                     <label for="username">Usuário</label>
-                    <input type="text" id="username" name="username" required>
+                    <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
                 </div>
                 <div class="input-group">
                     <label for="password">Senha</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
                 </div>
                 <div class="actions">
-                    <button type="submit" class="login-button">Entrar</button>
-                    <a href="#" class="recuperar-senha">Esqueci minha senha</a>
+                    <a href="#recuperacao" class="recuperar-senha">Esqueceu a senha?</a>
+                    <button type="submit" class="login-button">Login</button>
                 </div>
             </form>
-        </div>
-        <div class="image-section">
-            <img src="imagem.jpg" alt="Imagem" class="imagempit">
-            <p class="nomecriador">Criado por <span class="frontforte">Seu Nome</span></p>
-        </div>
-    </div>
-</body>
+        </section>
 
+        <div class="image-section">
+            <img class="imagempit" src="pitbul.jpg" alt="Pitbull">
+            <h1 class="nomecriador">JayChou</h1>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
 </html>
