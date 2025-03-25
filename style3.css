@@ -27,6 +27,7 @@ body {
 }
 
 .menu {
+    flex-direction: row;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 15px 0;
     position: fixed;
@@ -37,6 +38,7 @@ body {
 }
 
 .menu ul {
+     flex-direction: row;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -44,10 +46,12 @@ body {
 }
 
 .menu li {
+     flex-direction: row;
     margin: 0 15px;
 }
 
 .menu a {
+     flex-direction: row;
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -58,6 +62,7 @@ body {
 }
 
 .menu a:hover {
+     flex-direction: row;
     background: rgba(255, 255, 255, 0.5);
 }
 
