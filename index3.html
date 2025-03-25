@@ -40,66 +40,6 @@
         </div>
     </section>
 
-    <script>
-        let words = ["javascript", "html", "css", "developer", "programador"];
-        let word, guessed, mistakes;
-
-        function startNewGame() {
-            word = words[Math.floor(Math.random() * words.length)];
-            guessed = Array(word.length).fill("_");
-            mistakes = 0;
-            updateDisplay();
-            createButtons();
-            document.getElementById("status").textContent = "";
-            document.getElementById("resetButton").style.display = "none";
-        }
-
-        function updateDisplay() {
-            document.getElementById("wordDisplay").textContent = guessed.join(" ");
-        }
-
-        function checkLetter(letter) {
-            if (word.includes(letter)) {
-                for (let i = 0; i < word.length; i++) {
-                    if (word[i] === letter) guessed[i] = letter;
-                }
-            } else {
-                mistakes++;
-            }
-            updateDisplay();
-            checkGameOver();
-        }
-
-        function checkGameOver() {
-            if (!guessed.includes("_")) {
-                document.getElementById("status").textContent = "Você venceu!";
-                document.getElementById("resetButton").style.display = "inline-block";
-            } else if (mistakes >= 6) {
-                document.getElementById("status").textContent = `Você perdeu! A palavra era ${word}.`;
-                document.getElementById("resetButton").style.display = "inline-block";
-            }
-        }
-
-        function createButtons() {
-            const lettersDiv = document.getElementById("letters");
-            lettersDiv.innerHTML = ""; // Limpa os botões anteriores
-            for (let char of "abcdefghijklmnopqrstuvwxyz") {
-                let btn = document.createElement("button");
-                btn.textContent = char;
-                btn.onclick = function() {
-                    checkLetter(char);
-                    btn.disabled = true;
-                };
-                lettersDiv.appendChild(btn);
-            }
-        }
-
-        document.getElementById("resetButton").addEventListener("click", function() {
-            startNewGame();
-        });
-
-        // Iniciar o jogo ao carregar a página
-        startNewGame();
-    </script>
+    
 </body>
 </html>
