@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bytesized&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #22D4FD, #4B0082, #8A2BE2, #1E90FF, #FF6347);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    color: #F6F6F6;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    height: 100vh;            
+    margin: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #4B0082;
+    color: rgb(236, 236, 236);
+}
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.imagempit {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.imagempit:hover {
+    transform: scale(1.1);
+}
+
+.nomecriador {
+    font-family: "Krona One", sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #22D4FD;
+    transition: transform 0.3s ease;
+}
+
+.nomecriador:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 12px;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.div2 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 a {
+    background-color: #22D4FD;
+    color: black;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.div2 a:hover {
+    background-color: #1a9ec6;
+    transform: translateY(-5px);
+}
+
+.h2obrigado {
+    transition: transform 0.3s ease;
+}
+
+.h2obrigado:hover {
+    transform: scale(1.1);
+    background-color: #1a9ec6;
+    border-radius: 12px;
+}
+
+.forca-container {
+    margin-right: 200px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #22D4FD;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+}
+
+.forca-container h2 {
+    font-family: "Krona One", sans-serif;
+    color: #22D4FD;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.word {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 20px 0;
+}
+
+.letters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.letters button {
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.letters button:hover {
+    background-color: #22D4FD;
+    transform: scale(1.1);
+}
+
+.letters button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+#status {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #F6F6F6;
+}
+
+.reset-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #1a9ec6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(26, 158, 198, 0.4);
+}
+
+.reset-button:hover {
+    background-color: #4B0082;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(26, 158, 198, 0.6);
+}
+
+.reset-button:active {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(26, 158, 198, 0.4);
+}
+
+.reset-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(26, 158, 198, 0.8);
+}
+
+.h3sobremim {
+    margin-right: 100px;
+    margin-left: 100px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .forca-container {
+        margin-right: 0;
+        width: 90%;
+        max-width: 100%;
+    }
+    .letters button {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
