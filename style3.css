@@ -160,6 +160,10 @@ body {
     border-radius: 10px;
     color: white;
 }
+.h2obrigado {
+    padding: 55px;
+    margin-top: 20px;
+}
 
 
 @media (max-width: 768px) {
