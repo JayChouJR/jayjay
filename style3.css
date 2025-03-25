@@ -105,12 +105,12 @@ body {
 }
 
 h2 {
+    margin-left: px
     text-align: center;
     margin-top: 12px;
     padding: 10px;
     color: whitesmoke;
 }
-
 .div2 {
     margin-top: 40px;
     display: flex;
@@ -210,8 +210,8 @@ h2 {
     color: #F6F6F6;
 }
 .h3sobremim {
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 600px;
+    margin-left: 600px;
     font-family: "Kanit", sans-serif;
     font-weight: 500;
   font-style: normal;
