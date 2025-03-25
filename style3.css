@@ -83,6 +83,7 @@ body {
 }
 
 .nomecriador {
+    padding: 55px;
     font-family: "Krona One", sans-serif;
     font-size: 26px;
     color: cyan;
