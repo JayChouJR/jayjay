@@ -84,7 +84,7 @@ body {
 }
 
 .nomecriador {
-    padding: 30px;
+    padding: 20px;
     font-family: "Krona One", sans-serif;
     font-size: 26px;
     color: cyan;
@@ -157,13 +157,13 @@ body {
     margin: auto;
     font-family: "Kanit", sans-serif;
     font-weight: 500;
-    padding: 5px;
+    padding: 30px;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     color: white;
 }
 .h2obrigado {
-    padding: 55px;
+    padding: 35px;
     margin-top: 20px;
 }
 
