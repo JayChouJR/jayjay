@@ -1,3 +1,11 @@
+# Dependências de node
 node_modules/
+
+# Arquivos de log
+*.log
+
+# Configurações de IDE
+.vscode/
+
+# Arquivos de ambiente
 .env
-package-lock.json
