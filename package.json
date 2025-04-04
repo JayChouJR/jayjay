@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "nodemon ./app/js/serve.js"
+    "serve": "nodemon ./app/serve.js"
   },
   "keywords": [],
   "author": "Kaua Medeiros",
