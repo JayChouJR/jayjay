@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="meuApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Home</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-controller="HomeController">
+  <h1>Bem-vindo à página inicial</h1>
+  <p>{{ mensagem }}</p>
+
+
+  <script>
+    // Definindo o módulo e o controlador no AngularJS
+    var app = angular.module('meuApp', []);
+    app.controller('HomeController', function($scope) {
+      $scope.mensagem = "Esta é a página inicial criada com AngularJS!";
+    });
+  </script>
+</body>
+</html>
